@@ -1,12 +1,14 @@
-body {
+body { 
     background-color: #fff;
 }
-
-main {
-    background-color: #800000;
-    color: white;
+.header{
+    border: 10px solid #800000;
+    color: #800000;
     text-align: center;
     padding: 15px;
     font-size: 45px;
-
+}
+img {
+    width: 450px;
+    height: 250px;
 }
