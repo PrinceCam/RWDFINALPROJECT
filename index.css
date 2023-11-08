@@ -1,18 +1,26 @@
-body {
-    background-color: #000000;
-    font-size: 10px;
+:root {
+    --border-skin: #0b8000;
+    --border-line: #0000ff;
 }
+
+body {
+    font-size: 10px;
+    background-image: url(images/sttech.png);
+    background-attachment: fixed;
+
+}
+
 
 a {
     font-size: 18px;
 }
 
 .header {
-    border: 10px solid #800000;
-    color: #800000;
+    border: 10px solid var(--border-skin);
+    color: var(--border-skin);
     text-align: center;
     padding: 15px;
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 10px;
 
 }
@@ -28,40 +36,83 @@ img {
 
 .heading-font {
     font-family: 'Odibee Sans', sans-serif;
-
+    color: var(--border-skin);
 }
 
 .content-font {
     font-family: 'Roboto Serif', serif;
     font-size: 1.2rem;
-
+    text-align: center;
 }
 
 a:hover {
     text-decoration: none;
-    color: #0000ff;
+    color: var(--border-line);
     list-style-type: none;
-    background-color: #800000;
+    background-color: var(--border-skin);
 }
 
 main {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+   /* background-color: #ffffffde;*/
+   font-size: 45px;
 }
 
 li {
     width: 135px;
     height: 50px;
-    border: 2px solid #800000;
+    border: 2px solid var(--border-skin);
     text-align: center;
     list-style-type: none;
 }
 
-section{
-    color:#800000;
+section {
+    color: var(--border-skin);
 }
+
+footer {
+    color: var(--border-skin);
+    font-size: 1.5rem;
+}
+
 @font-face {
     src: url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto+Serif:opsz@8..144&display=swap');
     font-family: 'Odibee Sans', sans-serif;
     font-family: 'Roboto Serif', serif;
+}
+
+@media screen and (max-width: 680px) {
+    .header {
+        border-color: var(--border-line);
+    }
+
+    body {
+        background-color: #000000;
+    }
+
+    a:hover {
+        color: var(--border-skin);
+    }
+
+    section {
+        color: var(--border-line);
+    }
+
+    .header {
+        border: 10px solid var(--border-line);
+        color: var(--border-line);
+    }
+
+    li {
+        border: 2px solid var(--border-line)
+    }
+
+    .heading-font {
+        color: var(--border-line);
+    }
+
+    footer {
+        color: var(--border-line);
+    }
 }
